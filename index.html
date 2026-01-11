@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao-Chuang Wang | Homepage</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for academic icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- MathJax for LaTeX support -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-header {
+            @apply flex items-center justify-between mb-6 border-b-2 border-blue-600 pb-1;
+        }
+        .section-title {
+            @apply text-2xl font-bold text-slate-900;
+        }
+        .nav-link {
+            @apply text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-200;
+        }
+        .research-group {
+            @apply p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300;
+        }
+        /* 可爱的头像占位符样式 */
+        .avatar-placeholder {
+            @apply w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 text-blue-400;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="font-bold text-lg tracking-tight uppercase text-blue-700">Xiao-Chuang Wang</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="nav-link">About</a>
+                <!-- 调整了顺序：Research 移到了 Education 前面 -->
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#talks" class="nav-link">Talks</a>
+                <a href="#teaching" class="nav-link">Teaching</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden text-slate-600">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="max-w-4xl mx-auto">
+        <!-- Hero Section -->
+        <header id="home" class="pt-32 pb-12 px-6">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <!-- 头像区域 -->
+                <div class="w-40 h-40 md:w-52 md:h-52 rounded-3xl overflow-hidden shadow-inner border-4 border-white bg-white flex items-center justify-center relative group">
+                    <img src="./profile.jpg" alt="Profile Photo" 
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" 
+                        class="w-full h-full object-cover">
+                    <!-- 备选的可爱占位符 -->
+                    <div class="avatar-placeholder hidden">
+                        <i class="fa-solid fa-face-smile text-4xl mb-2 opacity-50"></i>
+                        <span class="text-[10px] font-bold tracking-widest uppercase opacity-60">Math Explorer</span>
+                        <div class="absolute bottom-2 text-blue-300 opacity-20 text-4xl select-none">$\pi$</div>
+                    </div>
+                </div>
+                
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">Xiao-Chuang Wang</h1>
+                    <p class="text-lg text-blue-600 font-semibold mb-3">Ph.D. Student in Mathematics</p>
+                    <p class="text-slate-600 mb-2">
+                        School of Mathematical Sciences <br> University of Science and Technology of China <br>
+                    </p>
+                    <p class="text-slate-500 font-mono text-sm bg-blue-50/50 inline-block px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-envelope mr-2 text-blue-400"></i>wxchuang@mail.ustc.edu.cn
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 bg-white px-8 rounded-3xl shadow-sm border border-slate-100 mb-8 mx-4 md:mx-0 group">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="text-slate-700">
+                <p>
+                    I am a Ph.D. student at <strong> University of Science and Technology of China (USTC)</strong>, supervised by Prof. <strong>Xiao-Wu Chen</strong>. My research focuses on the Representation Theory of Algebras and Geometry Model of (skew-)gentle algebras.
+                </p>
+            </div>
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research" class="py-12 px-6 group">
+            <div class="section-header">
+                <h2 class="section-title">Research Interests</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mt-2">
+                <!-- Group A -->
+                <div class="research-group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-infinity"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800">Representation Theory of Algebras</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                            <span class="text-sm">Gorenstein property.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                            <span class="text-sm">Cohen-Macauley Module.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                            <span class="text-sm">Derived Category.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group B -->
+                <div class="research-group">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800">Geometry Model of (skew-)gentle algebras</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                            <span class="text-sm">Combinational map.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                            <span class="text-sm">Arf invariant of gentle algebras.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                            <span class="text-sm">Hochschild (co)homology of skew-gentle algebras.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-12 px-6 group">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold">Ph.D. in Mathematics</h3>
+                        <p class="text-sm text-slate-500">School of Mathematical Sciences, University of Science and Technology of China (USTC) <br> Advisor: Xiao-Wu Chen
+                        </p>
+                    </div>
+                    <span class="text-slate-400 text-xs font-mono">2019 — Pres.</span>
+                </div>
+                <div class="flex justify-between items-start border-t border-slate-100 pt-4">
+                    <div>
+                        <h3 class="font-bold">Bachelor of Mathematics and Applied Mathematics</h3>
+                        <p class="text-sm text-slate-500">School of Mathematical Sciences, Anhui University</p>
+                    </div>
+                    <span class="text-slate-400 text-xs font-mono">2015 — 2019</span>
+                </div>
+                <div class="flex justify-between items-start border-t border-slate-100 pt-4">
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="py-12 px-6 group">
+            <div class="section-header">
+                <h2 class="section-title">Publications</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="border-l-4 border-blue-500 pl-6 py-1">
+                    <h3 class="font-bold text-lg mb-1 leading-snug text-slate-800">Quasi-diagrams and gentle algebras</h3>
+                    <p class="text-sm text-slate-600 mb-2">Haigang Hu, <strong>Xiao-Chuang Wang</strong>, Yu Ye</p>
+                    <p class="italic text-slate-400 text-xs">Journal of Algebras, 2025</p>
+                    <div class="mt-2 flex gap-4 text-xs font-bold text-blue-600">
+                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="#" class="hover:underline">DOI</a>
+                        <a href="#" class="hover:underline">arXiv</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preprints Section -->
+        <section id="preprints" class="py-12 px-6 group">
+            <div class="section-header">
+                <h2 class="section-title">Preprints</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="border-l-4 border-slate-300 pl-6 py-1">
+                    <h3 class="font-bold text-lg mb-1 leading-snug text-slate-800">Hochschild cohomology of graded skew-gentle algebras: Gerstenhaber algebra structure and geometric interpretation</h3>
+                    <p class="text-sm text-slate-600 mb-2"> Xiuli Bian, Sibylle Schroll, Andrea Solotar, <strong>Xiao-Chuang Wang</strong>, Can Wen</p>
+                    <p class="italic text-slate-400 text-xs">Preprint, 2025</p>
+                    <div class="mt-2 flex gap-4 text-xs font-bold text-blue-600">
+                        <a href="#" class="hover:underline">arXiv:2501.xxxxx</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Talks Section -->
+        <section id="talks" class="py-12 bg-white px-8 rounded-3xl shadow-sm border border-slate-100 mb-8 mx-4 md:mx-0 group">
+            <div class="section-header">
+                <h2 class="section-title">Talks</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <div class="text-blue-500 mt-1"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 leading-tight text-sm md:text-base">Gentle algebras with one maximal path</h3>
+                        <p class="text-xs text-slate-500 mt-1">Shaixi Normal University | Dec. 2023</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 border-t border-slate-100 pt-4">
+                    <div class="text-blue-500 mt-1"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 leading-tight text-sm md:text-base">Quasi-diagrams and gentle algebras</h3>
+                        <p class="text-xs text-slate-500 mt-1">Representation Theory Group Seminar, Cologne University | Jan. 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="py-12 px-6 group">
+            <div class="section-header">
+                <h2 class="section-title">Teaching Assistant (TA)</h2>
+            </div>
+            <ul class="space-y-3 text-slate-700">
+                <li class="flex items-center text-sm">
+                    <i class="fa-solid fa-chevron-right text-blue-500 mr-2 text-[10px]"></i>
+                    Foundations of Algebra (Fall 2022)
+                </li>
+                <li class="flex items-center text-sm">
+                    <i class="fa-solid fa-chevron-right text-blue-500 mr-2 text-[10px]"></i>
+                    Abstract Algebra (Spring 2022)
+                </li>
+                <li class="flex items-center text-sm">
+                    <i class="fa-solid fa-chevron-right text-blue-500 mr-2 text-[10px]"></i>
+                    Linear Algebra (A2) (Fall 2021)
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="py-12 bg-slate-900 text-white px-6 rounded-t-[2.5rem] mt-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-xl font-bold mb-6">Contact</h2>
+                <div class="text-sm space-y-2 text-slate-400">
+                    <p>No.96, JinZhai Road, Baohe District<br>University of Science and Technology of China<br>Hefei, Anhui, P.R.China</p>
+                    <p><a href="mailto:email@university.edu" class="hover:text-blue-400 underline underline-offset-4">wxchuang@mail.ustc.edu.cn</a></p>
+                </div>
+                <div class="mt-10 pt-6 border-t border-slate-800 text-slate-600 text-[10px] uppercase tracking-widest">
+                    &copy; 2024 Your Name.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
